@@ -1,54 +1,50 @@
-<header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
-    <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Rab_rab</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/contact']"
-              >contact</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/about']"
-              >about</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/portfolio']"
-              >portfolio</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/shop']"
-              >Shop</a
-            >
-          </li>
-        </ul>
-      </div>
+<header class="header-area">
+  <div class="main-header-area">
+    <div class="classy-nav-container breakpoint-off">
+      <nav class="classy-navbar justify-content-between" id="monaNav">
+        <div class="bg-curve" style="background-image: url(assets/img/core-img/curve.png);"></div>
+        <a class="nav-brand" [routerLink]="['/']"><img style="width: 92Px;" src="assets/img/bg-img/rabrablogotrade.png"
+            alt=""></a>
+        <div class="classy-navbar-toggler">
+          <span class="navbarToggler"><span></span><span></span><span></span></span>
+        </div>
+        <div class="classy-menu">
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          <div class="classynav">
+            <ul id="nav">
+             
+              <li class="current-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+                <a [routerLink]="['/']">Home</a></li>
+              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/portfolio']">Portfolio</a>
+              </li>
+              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/shop']">Shop</a></li>
+              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/about']">About Us</a></li>
+              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/contact']">Contact</a></li>
+
+            </ul>
+            <div class="search-icon" data-toggle="modal" data-target="#searchModal">
+              <i class="icon_search"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </header>
+<div class="top-search-area">
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+           <div class="modal-body">
+              <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
+              <form action="https://preview.colorlib.com/theme/mona/index.html" method="post">
+                 <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                 <button type="submit">Search</button>
+              </form>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
