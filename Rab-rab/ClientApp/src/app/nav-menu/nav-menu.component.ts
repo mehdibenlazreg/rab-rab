@@ -12,7 +12,6 @@ export class NavMenuComponent implements OnInit {
   menu : any[];
   selectedMenu : any;
   constructor(router : Router) { 
-    
   }
 
   ngOnInit() {
