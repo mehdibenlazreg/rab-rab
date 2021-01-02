@@ -14,15 +14,8 @@
           </div>
           <div class="classynav">
             <ul id="nav">
-             
-              <li class="current-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-                <a [routerLink]="['/']">Home</a></li>
-              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/portfolio']">Portfolio</a>
-              </li>
-              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/shop']">Shop</a></li>
-              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/about']">About Us</a></li>
-              <li class="li-item" [routerLinkActive]="['link-active']"><a [routerLink]="['/contact']">Contact</a></li>
-
+              <li *ngFor="let item of menu" [ngClass]="{'current-item': item.isActive, 'li-item': !item.isActive }" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+                <a [routerLink]="[item.link]" (click)="changeSnap(item)">{{item.name}}</a></li>
             </ul>
             <div class="search-icon" data-toggle="modal" data-target="#searchModal">
               <i class="icon_search"></i>
