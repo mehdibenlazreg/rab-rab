@@ -14,7 +14,7 @@
           </div>
           <div class="classynav">
             <ul id="nav">
-              <li *ngFor="let item of menu" [ngClass]="{'current-item': item.isActive, 'li-item': !item.isActive }" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+              <li *ngFor="let item of menu" [ngClass]="{'current-item': item.isActive, 'li-item': !item.isActive }" >
                 <a [routerLink]="[item.link]" (click)="changeSnap(item)">{{item.name}}</a></li>
             </ul>
             <div class="search-icon" data-toggle="modal" data-target="#searchModal">
