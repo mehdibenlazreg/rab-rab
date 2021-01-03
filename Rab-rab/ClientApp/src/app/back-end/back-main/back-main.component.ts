@@ -8,13 +8,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class BackMainComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  disconnect() {
-    console.log('router router')
-    this.router.navigate(['/rabback/login']);
-  }
+  
 }

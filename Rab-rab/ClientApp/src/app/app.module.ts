@@ -13,6 +13,8 @@ import { ContactComponent } from './front-end/contact/contact.component';
 import { BackendModule } from './back-end/backend.module';
 import { LoginComponent } from './back-end/login/login.component';
 import { BackMainComponent } from './back-end/back-main/back-main.component';
+import { BackNavBarComponent } from './back-nav-bar/back-nav-bar.component';
+import { BackAsideBarComponent } from './back-aside-bar/back-aside-bar.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { BackMainComponent } from './back-end/back-main/back-main.component';
     ShopComponent,
     ContactComponent,
     LoginComponent,
-    BackMainComponent
+    BackMainComponent,
+    BackNavBarComponent,
+    BackAsideBarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
