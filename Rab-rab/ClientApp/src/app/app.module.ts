@@ -13,8 +13,8 @@ import { ContactComponent } from './front-end/contact/contact.component';
 import { BackendModule } from './back-end/backend.module';
 import { LoginComponent } from './back-end/login/login.component';
 import { BackMainComponent } from './back-end/back-main/back-main.component';
-import { BackNavBarComponent } from './back-nav-bar/back-nav-bar.component';
-import { BackAsideBarComponent } from './back-aside-bar/back-aside-bar.component';
+import { BackNavBarComponent } from './back-end/back-nav-bar/back-nav-bar.component';
+import { BackAsideBarComponent } from './back-end/back-aside-bar/back-aside-bar.component';
 
 
 @NgModule({
