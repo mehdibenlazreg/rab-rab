@@ -1,0 +1,14 @@
+p {
+    color: red;
+}
+body {
+    background-image: url(../../../assets/img/bg-img/test1.jpg) !important;
+    background-size: cover !important;
+    background-position-x: unset !important;
+    background-position: bottom !important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #6f6f6f;
+    color: #fff;
+}

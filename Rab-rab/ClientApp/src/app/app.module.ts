@@ -12,6 +12,7 @@ import { ShopComponent } from './front-end/shop/shop.component';
 import { ContactComponent } from './front-end/contact/contact.component';
 import { BackendModule } from './back-end/backend.module';
 import { LoginComponent } from './back-end/login/login.component';
+import { BackMainComponent } from './back-end/back-main/back-main.component';
 
 
 @NgModule({
@@ -23,6 +24,8 @@ import { LoginComponent } from './back-end/login/login.component';
     PortfolioComponent,
     ShopComponent,
     ContactComponent,
+    LoginComponent,
+    BackMainComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -36,7 +39,7 @@ import { LoginComponent } from './back-end/login/login.component';
       { path: 'about', component: AboutComponent },
       { path: 'shop', component: ShopComponent },
       { path: 'rabback/login', component: LoginComponent },
-      { path: 'rabback/test', component: LoginComponent },
+      { path: 'rabback/home', component: BackMainComponent },
       { path: 'rabback', component: LoginComponent },
       //{ path: '404', component: NotFoundComponent },
       { path: '**', redirectTo: '' }
